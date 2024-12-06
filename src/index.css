@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .my-container {
+      @apply container px-40 py-16 mx-auto;
+    }
+  }
+
+  @layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+  .f-family{
+    font-family: 'Poppins';
+  }
+}
+@media (max-width: 768px) {
+  .icon-container{
+    display: none;
+  }
+  .input-con{
+    flex-direction: column;
+  }
+}
+@media (max-width: 660px) {
+  .save-button {
+    font-size: 2.3vw;
+    padding: 1.5vw 1vw;
+}
+}
